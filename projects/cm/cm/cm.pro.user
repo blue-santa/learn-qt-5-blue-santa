@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 9.0.2, 2023-03-26T17:42:04. -->
+<!-- Written by QtCreator 9.0.2, 2023-03-27T00:23:14. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -95,7 +95,7 @@
    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Desktop Qt 6.4.3 GCC 64bit</value>
    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Desktop Qt 6.4.3 GCC 64bit</value>
    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">qt.qt6.643.gcc_64_kit</value>
-   <value type="qlonglong" key="ProjectExplorer.Target.ActiveBuildConfiguration">1</value>
+   <value type="qlonglong" key="ProjectExplorer.Target.ActiveBuildConfiguration">0</value>
    <value type="qlonglong" key="ProjectExplorer.Target.ActiveDeployConfiguration">0</value>
    <value type="qlonglong" key="ProjectExplorer.Target.ActiveRunConfiguration">1</value>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.BuildConfiguration.0">
@@ -249,7 +249,7 @@
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/home/bluesanta/Documents/01-Studio/03-Personal-Public/01-Exercises/07-Book-Studies-Active/priority_2/2023-03-20-Learn-Qt-5-My-Study/projects/cm/shadow-builds/cm-tests</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/home/bluesanta/Documents/01-Studio/03-Personal-Public/01-Exercises/07-Book-Studies-Active/priority_2/2023-03-20-Learn-Qt-5-My-Study/projects/cm/cm/cm-tests/../../shadow-builds/cm-tests/binaries/linux/gcc/x86/release</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.1">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
@@ -266,7 +266,7 @@
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/home/bluesanta/Documents/01-Studio/03-Personal-Public/01-Exercises/07-Book-Studies-Active/priority_2/2023-03-20-Learn-Qt-5-My-Study/projects/cm/shadow-builds/cm-ui</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/home/bluesanta/Documents/01-Studio/03-Personal-Public/01-Exercises/07-Book-Studies-Active/priority_2/2023-03-20-Learn-Qt-5-My-Study/projects/cm/cm/cm-ui/../../shadow-builds/cm-ui/binaries/linux/gcc/x86/release</value>
    </valuemap>
    <value type="qlonglong" key="ProjectExplorer.Target.RunConfigurationCount">2</value>
   </valuemap>

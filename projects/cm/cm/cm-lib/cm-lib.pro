@@ -22,11 +22,7 @@ HEADERS += \
     source/models/client.h
 
 message(cm-lib project dir: $${PWD})
-
 DESTDIR = $$PWD/../../shadow-builds/cm-lib/binaries/$$DESTINATION_PATH
-
-message(cm-lib destina dir: $${DESTDIR})
-
 OBJECTS_DIR = $$PWD/build/$$DESTINATION_PATH/.obj
 MOC_DIR = $$PWD/build/$$DESTINATION_PATH/.moc
 RCC_DIR = $$PWD/build/$$DESTINATION_PATH/.qrc
