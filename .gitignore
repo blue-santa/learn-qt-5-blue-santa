@@ -2,3 +2,4 @@
 *.[0-1]
 *.o
 *.so
+/projects/cm/shadow-builds/
