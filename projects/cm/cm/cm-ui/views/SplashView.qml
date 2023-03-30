@@ -1,6 +1,8 @@
 import QtQuick
 import QtQuick.Controls 2.9
 
+import assets 1.0
+
 Item {
     Rectangle {
         anchors.fill: parent

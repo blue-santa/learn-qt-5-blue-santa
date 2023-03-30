@@ -18,6 +18,7 @@ int main(int argc, char *argv[])
     cm::controllers::MasterController masterController;
 
     QQmlApplicationEngine engine;
+    engine.addImportPath("qrc:/");
     engine.rootContext()->setContextProperty("masterController", &masterController);
     engine.load(QUrl(QStringLiteral("qrc:/views/MasterView.qml")));
 
