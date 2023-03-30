@@ -3,6 +3,9 @@
 
 #include "cm-lib_global.h"
 
+namespace cm {
+namespace models {
+
 class CMLIBSHARED_EXPORT Client
 {
 public:
@@ -10,3 +13,6 @@ public:
 };
 
 #endif // CLIENT_H
+
+}
+}
