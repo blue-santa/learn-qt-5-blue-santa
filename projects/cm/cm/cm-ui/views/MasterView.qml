@@ -2,6 +2,9 @@ import QtQuick 2.9
 import QtQuick.Window 2.2
 import QtQuick.Controls 2.2
 
+import assets 1.0
+import components 1.0
+
 Window {
     width: 640
     height: 480
@@ -29,18 +32,50 @@ Window {
         color: "#000000"
 
         Column {
-            Button {
-                text: "Dashboard"
-                onClicked: masterController.ui_navigationController.goDashboardView()
+            NavigationButton {
             }
-            Button {
-                text: "New Client"
-                onClicked: masterController.ui_navigationController.goCreateClientView()
+            Row {
+                Text {
+                    font {
+                        family: Style.fontAwesome
+                        pixelSize: 42
+                    }
+                    color: "#ffffff"
+                    text: "\uf015"
+                }
+                Text {
+                    color: "#ffffff"
+                    text: "Dashboard"
+                }
             }
-            Button {
-                text: "Find Client"
-                onClicked: masterController.ui_navigationController.goFindClientView()
-            }    Component.onCompleted: contentFrame.replace("qrc:/views/DashboardView.qml")
+            Row {
+                Text {
+                    font {
+                        family: Style.fontAwesome
+                        pixelSize: 42
+                    }
+                    color: "#ffffff"
+                    text: "\uf234"
+                }
+                Text {
+                    color: "#ffffff"
+                    text: "New Client"
+                }
+            }
+            Row {
+                Text {
+                    font {
+                        family: Style.fontAwesome
+                        pixelSize: 42
+                    }
+                    color: "#ffffff"
+                    text: "\uf002"
+                }
+                Text {
+                    color: "#ffffff"
+                    text: "Find Client"
+                }
+            }
 
         }
     }

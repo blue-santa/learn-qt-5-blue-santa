@@ -4,7 +4,7 @@ import assets 1.0
 Item {
     Rectangle {
         anchors.fill: parent
-        color: Style.backgroundColour
+        color: Style.colourBackground
 
         Text {
             id: textHere

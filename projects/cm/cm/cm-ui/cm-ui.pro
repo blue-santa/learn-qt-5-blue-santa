@@ -15,6 +15,7 @@ SOURCES += \
 
 RESOURCES += views.qrc \
     assets.qrc \
+    components.qrc
 
 # Additional import path used to resolve QML modules in Qt Creator's core model
 QML_IMPORT_PATH = $$PWD
