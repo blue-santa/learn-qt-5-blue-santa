@@ -14,12 +14,16 @@ INCLUDEPATH += source
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += source/models/client.cpp \
-    source/controllers/master-controller.cpp
+    source/controllers/command-controller.cpp \
+    source/controllers/master-controller.cpp \
+    source/framework/command.cpp
 
 HEADERS += \
     source/cm-lib_global.h \
+    source/controllers/command-controller.h \
     source/controllers/master-controller.h \
     source/controllers/navigation-controller.h \
+    source/framework/command.h \
     source/models/client.h
 
 message(cm-lib project dir: $${PWD})

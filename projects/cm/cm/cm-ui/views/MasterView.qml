@@ -21,63 +21,9 @@ Window {
         onGoFindClientView: contentFrame.replace("qrc:/views/FindClientView.qml")
     }
 
-    Rectangle {
+    NavigationBar {
         id: navigationBar
-        anchors {
-            top: parent.top
-            bottom: parent.bottom
-            left: parent.left
-        }
-        width: 100
-        color: "#000000"
-
-        Column {
-            NavigationButton {
-            }
-            Row {
-                Text {
-                    font {
-                        family: Style.fontAwesome
-                        pixelSize: 42
-                    }
-                    color: "#ffffff"
-                    text: "\uf015"
-                }
-                Text {
-                    color: "#ffffff"
-                    text: "Dashboard"
-                }
-            }
-            Row {
-                Text {
-                    font {
-                        family: Style.fontAwesome
-                        pixelSize: 42
-                    }
-                    color: "#ffffff"
-                    text: "\uf234"
-                }
-                Text {
-                    color: "#ffffff"
-                    text: "New Client"
-                }
-            }
-            Row {
-                Text {
-                    font {
-                        family: Style.fontAwesome
-                        pixelSize: 42
-                    }
-                    color: "#ffffff"
-                    text: "\uf002"
-                }
-                Text {
-                    color: "#ffffff"
-                    text: "Find Client"
-                }
-            }
-
-        }
+        property bool isCollapsed: true
     }
 
     StackView {

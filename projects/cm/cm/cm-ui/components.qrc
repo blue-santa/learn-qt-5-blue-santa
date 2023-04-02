@@ -2,5 +2,6 @@
     <qresource prefix="/components">
         <file alias="qmldir">components/qmldir.qml</file>
         <file alias="NavigationButton.qml">components/NavigationButton.qml</file>
+        <file alias="NavigationBar.qml">components/NavigationBar.qml</file>
     </qresource>
 </RCC>
