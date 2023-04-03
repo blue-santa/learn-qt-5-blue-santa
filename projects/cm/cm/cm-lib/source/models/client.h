@@ -8,11 +8,12 @@ namespace models {
 
 class CMLIBSHARED_EXPORT Client
 {
+
 public:
     Client();
 };
 
-#endif // CLIENT_H
+}
+}
 
-}
-}
+#endif

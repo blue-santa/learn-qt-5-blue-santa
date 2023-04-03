@@ -14,10 +14,8 @@ public:
     Implementation(CommandController* _commandController)
         : commandController(_commandController)
     {
-        Command* createClientSaveCommand = new Command(
-            commandController, QChar( 0xf0c7 ), "Save" );
-        QObject::connect( createClientSaveCommand, &Command::executed,
-                         commandController, &CommandController::onCreateClientSaveExecuted );
+        Command* createClientSaveCommand = new Command( commandController, QChar( 0xf0c7 ), "Save" );
+        QObject::connect( createClientSaveCommand, &Command::executed, commandController, &CommandController::onCreateClientSaveExecuted );
         createClientViewContextCommands.append( createClientSaveCommand );
     }
 

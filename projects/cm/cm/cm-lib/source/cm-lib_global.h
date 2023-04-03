@@ -9,4 +9,4 @@
 #  define CMLIBSHARED_EXPORT Q_DECL_IMPORT
 #endif
 
-#endif // CMLIB_GLOBAL_H
+#endif

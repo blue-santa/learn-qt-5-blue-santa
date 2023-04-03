@@ -1,16 +1,14 @@
 platform_path = unknown-platform
 compiler_path = unknown-compiler
 processor_path = unknown-processor
-build_path = uknown-build
+build_path = unknown-build
 
 PLATFORM_WIN {
     platform_path = windows
 }
-
 PLATFORM_OSX {
     platform_path = osx
 }
-
 PLATFORM_LINUX {
     platform_path = linux
 }
@@ -18,11 +16,9 @@ PLATFORM_LINUX {
 COMPILER_GCC {
     compiler_path = gcc
 }
-
 COMPILER_MSVC2017 {
     compiler_path = msvc2017
 }
-
 COMPILER_CLANG {
     compiler_path = clang
 }

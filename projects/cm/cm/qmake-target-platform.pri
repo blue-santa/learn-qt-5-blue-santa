@@ -16,7 +16,7 @@ linux {
     CONFIG += PLATFORM_LINUX
     message(PLATFORM_LINUX)
     # Make QMAKE_TARGET arch available for Linux
-    !contains(QT_ARCH, X86_64) {
+    !contains(QT_ARCH, x86_64){
         QMAKE_TARGET.arch = x86
     } else {
         QMAKE_TARGET.arch = x86_64
@@ -35,7 +35,7 @@ macx {
         message(COMPILER_CLANG)
         QMAKE_TARGET.arch = x86_64
     }
-    macx-clang-32 {
+    macx-clang-32{
         CONFIG += COMPILER_CLANG
         message(COMPILER_CLANG)
         QMAKE_TARGET.arch = x86
@@ -49,6 +49,7 @@ contains(QMAKE_TARGET.arch, x86_64) {
     CONFIG += PROCESSOR_x86
     message(PROCESSOR_x86)
 }
+
 CONFIG(debug, release|debug) {
     CONFIG += BUILD_DEBUG
     message(BUILD_DEBUG)
