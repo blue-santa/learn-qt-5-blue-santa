@@ -26,18 +26,18 @@ Item {
                     pixelSize: Style.pixelSizeNavigationBarIcon
                 }
                 color: Style.colourNavigationBarFont
+                text: "\uf11a"
                 verticalAlignment: Text.AlignVCenter
                 horizontalAlignment: Text.AlignHCenter
-                text: "\uf0c9"
             }
             Text {
                 id: textDescription
-                width: Style.widthNavigationButtonIcon
-                height: Style.heightNavigationButtonIcon
+                width: Style.widthNavigationButtonDescription
+                height: Style.heightNavigationButtonDescription
                 color: Style.colourNavigationBarFont
+                text: "SET ME!!"
                 verticalAlignment: Text.AlignVCenter
                 font.pixelSize: Style.pixelSizeNavigationBarText
-                text: "Initialize Text"
             }
         }
 
@@ -58,8 +58,6 @@ Item {
                     color: hoverColour
                 }
             }
-
         ]
     }
 }
-

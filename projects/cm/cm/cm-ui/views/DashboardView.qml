@@ -5,9 +5,7 @@ Item {
     Rectangle {
         anchors.fill: parent
         color: Style.colourBackground
-
         Text {
-            id: textHere
             anchors.centerIn: parent
             text: "Dashboard View"
         }
