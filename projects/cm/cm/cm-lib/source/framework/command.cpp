@@ -6,8 +6,7 @@ namespace framework {
 class Command::Implementation
 {
 public:
-    Implementation(const QString& _iconCharacter, const QString&
-    _description, std::function<bool()> _canExecute)
+    Implementation(const QString& _iconCharacter, const QString& _description, std::function<bool()> _canExecute)
         : iconCharacter(_iconCharacter)
         , description(_description)
         , canExecute(_canExecute)

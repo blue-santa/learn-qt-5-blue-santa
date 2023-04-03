@@ -17,13 +17,13 @@ public:
         Command* createClientSaveCommand = new Command(
             commandController, QChar( 0xf0c7 ), "Save" );
         QObject::connect( createClientSaveCommand, &Command::executed,
-            commandController, &CommandController::onCreateClientSaveExecuted );
-        ui_createClientViewContextCommands.append( createClientSaveCommand );
+                         commandController, &CommandController::onCreateClientSaveExecuted );
+        createClientViewContextCommands.append( createClientSaveCommand );
     }
 
     CommandController* commandController{nullptr};
 
-    QList<Command*> ui_createClientViewContextCommands{};
+    QList<Command*> createClientViewContextCommands{};
 };
 
 CommandController::CommandController(QObject* parent)
@@ -38,13 +38,12 @@ CommandController::~CommandController()
 
 QQmlListProperty<Command> CommandController::ui_createClientViewContextCommands()
 {
-    return QQmlListProperty<Command>(this, implementation->ui_createClientViewContextCommands);
+    return QQmlListProperty<Command>(this, implementation->createClientViewContextCommands);
 }
 
 void CommandController::onCreateClientSaveExecuted()
 {
-    qDebug() << "You executed the Save command";
+    qDebug() << "You executed the Save command!";
 }
 
-}
-}
+}}

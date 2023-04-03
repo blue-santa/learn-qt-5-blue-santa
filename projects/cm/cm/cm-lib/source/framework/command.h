@@ -17,14 +17,13 @@ class CMLIBSHARED_EXPORT Command : public QObject
     Q_OBJECT
     Q_PROPERTY( QString ui_iconCharacter READ iconCharacter CONSTANT )
     Q_PROPERTY( QString ui_description READ description CONSTANT )
-    Q_PROPERTY( QString ui_canExecute READ canExecute NOTIFY canExecuteChanged )
+    Q_PROPERTY( bool ui_canExecute READ canExecute NOTIFY canExecuteChanged )
 
 public:
     explicit Command(QObject* parent = nullptr,
-                     const QString& iconCharacter = "",
-                     const QString& description = "",
-                     std::function<bool()> canExecute = []() { return true; });
-
+        const QString& iconCharacter = "",
+        const QString& description = "",
+        std::function<bool()> canExecute = [](){ return true; });
     ~Command();
 
     const QString& iconCharacter() const;
@@ -40,7 +39,6 @@ private:
     QScopedPointer<Implementation> implementation;
 };
 
-
 }}
 
-#endif // COMMAND_H
+#endif
